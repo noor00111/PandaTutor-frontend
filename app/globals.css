@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-lato), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+
+  --color-brand-50: #e0f0f5;
+  --color-brand-100: #c2e1eb;
+  --color-brand-200: #a4d2e1;
+  --color-brand-300: #86c3d7;
+  --color-brand-400: #68b4cd;
+  --color-brand-500: #215E61;
+  --color-brand-600: #1b5255;
+  --color-brand-700: #144549;
+  --color-brand-800: #0e393d;
+  --color-brand-900: #233D4D;
+
+  --color-accent-100: #fff3e6;
+  --color-accent-200: #ffe0bf;
+  --color-accent-300: #ffcc99;
+  --color-accent-400: #FE7F2D;
+  --color-accent-500: #e67328;
+
+  --color-surface-100: #faf8f2;
+  --color-surface-200: #f5f0e3;
+  --color-surface-300: #ede4cc;
+  --color-surface-400: #EEE6CA;
+  --color-surface-500: #d8cdb0;
+
+  --color-body-100: #fdfef6;
+  --color-body-200: #f9fcea;
+  --color-body-500: #F5FBE6;
+}
+
+
+@layer base {
+  :root {
+    --background: var(--color-body-500);
+    --foreground: var(--color-brand-900);
+    --card: #ffffff;
+    --card-foreground: var(--color-brand-900);
+    --border: var(--color-surface-400);
+    --input: var(--color-surface-400);
+    --primary: var(--color-brand-500);
+    --primary-foreground: #ffffff;
+    --muted: var(--color-surface-200);
+    --muted-foreground: var(--color-brand-700);
+    --radius: 1.5rem;
+  }
+}
+
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-lato), ui-sans-serif, system-ui, sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-playfair), ui-serif, Georgia, serif;
+  }
+}
+
+@layer utilities {
+.glass {
+    @apply bg-white/30 backdrop-blur-xl border border-white/20 shadow-sm;
+  }
+.glass-warm {
+  background: rgba(255, 255, 255, 0.6); /* cleaner */
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(33, 94, 97, 0.12);
+}
+
+.text-gradient {
+  @apply text-transparent bg-clip-text;
+  background-image: linear-gradient(
+    135deg,
+    var(--color-brand-500),
+    var(--color-accent-400)
+  );
+}
+ .subtitle {
+  color: var(--color-brand-600);
+}
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(137, 108, 108, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(137, 108, 108, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(137, 108, 108, 0.5);
+}

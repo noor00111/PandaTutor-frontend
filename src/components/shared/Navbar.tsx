@@ -19,7 +19,6 @@ export default function Navbar() {
 
   const renderLinks = (mobile = false) => {
     if (!isHydrated) return null;
-
     const container = mobile ? 'flex flex-col gap-5' : 'flex items-center gap-8';
 
     const logoutBtn = (

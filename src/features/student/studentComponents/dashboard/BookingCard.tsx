@@ -21,7 +21,7 @@ export function BookingCard({ booking, index, onReview }: BookingCardProps) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.1 }}>
 
-      <Card className="overflow-hidden bg-accent-200/80 backdrop-blur-md shadow-lg shadow-slate-200/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 rounded-3xl relative group">
+      <Card className="overflow-hidden bg-accent-100/40 backdrop-blur-md shadow-lg shadow-slate-200/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 rounded-3xl relative group">
         <div className="flex flex-col p-8 pl-10 h-full">
           <div className="flex justify-between items-start mb-6">
             <div className="flex items-center gap-4">

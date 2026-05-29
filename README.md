@@ -4,10 +4,10 @@ A full featured tutoring marketplace built with **Next.js**, **Express**, **Pris
 
 ---
 
-## Live Demo
+## Live Link
 
 - Frontend: [UI](https://panda-tutor-frontend.vercel.app/)
-- Backend API: [API Server](https://pandatutor-backend.onrender.com/)
+- Backend: [API Server](https://pandatutor-backend.onrender.com/)
 
 ---
 
@@ -123,26 +123,6 @@ npm install
 ```bash
 npm run dev
 ```
-
----
-
-## Scripts
-
-### Backend
-| Script | Description |
-|--------|-------------|
-| `npm run dev` | Start dev server with tsx |
-| `npm run build` | Compile TypeScript to `dist/` |
-| `npm start` | Run compiled production build |
-| `npm run seed` | Seed the database |
-| `npm run prisma:generate` | Regenerate Prisma client |
-
-### Frontend
-| Script | Description |
-|--------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Build for production |
-| `npm start` | Start production server |
 ---
 
 ## Test Accounts

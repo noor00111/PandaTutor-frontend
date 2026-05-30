@@ -19,8 +19,11 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: 'PandaTutor | Connect with Expert Tutors',
+  title: 'PandaTutor',
   description: 'Book personalized learning sessions with expert tutors around the globe.',
+  icons: {
+    icon: '/images/favIcon.png'
+  },
 };
 
 export default function RootLayout({
